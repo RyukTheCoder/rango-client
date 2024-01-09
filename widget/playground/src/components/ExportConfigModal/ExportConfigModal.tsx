@@ -19,6 +19,7 @@ import {
   prism,
 } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
+import { PLAYGROUND_CONTAINER_ID } from '../../constants';
 import { useTheme } from '../../hooks/useTheme';
 import { initialConfig, useConfigStore } from '../../store/config';
 import { filterConfig, formatConfig } from '../../utils/export';
@@ -56,6 +57,7 @@ export function ExportConfigModal(props: ExportConfigModalProps) {
 
   return (
     <Modal
+      container={document.getElementById(PLAYGROUND_CONTAINER_ID)}
       containerStyle={{
         maxWidth: '1109px',
         width: '90%',

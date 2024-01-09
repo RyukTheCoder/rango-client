@@ -14,7 +14,7 @@ export interface PropTypes {
   header?: React.ReactNode;
   prefix?: React.ReactNode;
   suffix?: React.ReactNode;
-  container?: HTMLElement;
+  container?: HTMLElement | null;
   containerStyle?: Stitches.CSS<typeof config>;
   footer?: React.ReactNode;
   hasLogo?: boolean;
