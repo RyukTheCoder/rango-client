@@ -35,11 +35,7 @@ export const BackDrop = styled('div', {
 });
 
 export const ModalContainer = styled('div', {
-  $$color: '$colors$background',
-  [`.${darkTheme} &`]: {
-    $$color: '$colors$foreground',
-  },
-  backgroundColor: '$$color',
+  backgroundColor: '$background',
   width: '100%',
   borderRadius: '$primary',
   display: 'flex',
