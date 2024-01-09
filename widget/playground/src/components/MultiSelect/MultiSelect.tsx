@@ -38,6 +38,11 @@ export function MultiSelect(props: MuliSelectPropTypes) {
   const hasValue = !valueAll;
   const showMore = hasValue && value.length > MAX_CHIPS;
   const onBack = () => setShowNextModal(false);
+  const onOpenNextModal = () => {
+    if (!props.disabled) {
+      setShowNextModal(true);
+    }
+  };
 
   return (
     <>
@@ -50,7 +55,7 @@ export function MultiSelect(props: MuliSelectPropTypes) {
       </Label>
       <Divider size={4} />
       <Select>
-        <div className="field" onClick={() => setShowNextModal(true)}>
+        <div className="field" onClick={onOpenNextModal}>
           <div className="chips">
             {valueAll && <Chip label={`All ${type}`} />}
             {noneSelected && <Chip label="None Selected" />}
