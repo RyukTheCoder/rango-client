@@ -12,7 +12,11 @@ type WalletChangedEventPayload = {
 
 export function changeAccountSubscriberBuilder() {
   // `true` instead of ProviderAPI is just a workaround. we don't need to have instance here.
-  return new ChangeAccountSubscriberBuilder<WalletChangedEventPayload, true>()
+  return new ChangeAccountSubscriberBuilder<
+    WalletChangedEventPayload,
+    true,
+    XRPLActions
+  >()
     .getInstance(() => true)
     .format(async (_, payload) => [
       utils.formatAddressToCAIP(payload.wallet.publicAddress),
@@ -27,5 +31,5 @@ export function changeAccountSubscriberBuilder() {
        * but it makes new bugs, where if two subscribers added at once, we will loose the track of the first one and it will be staled.
        */
     })
-    .build<XRPLActions>();
+    .build();
 }
