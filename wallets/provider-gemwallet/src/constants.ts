@@ -1,7 +1,7 @@
+import type { ProviderMetadata } from '@rango-dev/wallets-core';
 import type { BlockchainMeta } from 'rango-types';
 
-import { type ProviderMetadata } from '@rango-dev/wallets-core';
-import { Networks } from '@rango-dev/wallets-shared';
+import { xrplBlockchain } from 'rango-types';
 
 import getSigners from './signer.js';
 
@@ -27,7 +27,7 @@ export const info: ProviderMetadata = {
             value: 'XRPL',
             id: 'XRPL',
             getSupportedChains: (allBlockchains: BlockchainMeta[]) =>
-              allBlockchains.filter((chain) => chain.name === Networks.XRPL),
+              xrplBlockchain(allBlockchains),
           },
         ],
       },
