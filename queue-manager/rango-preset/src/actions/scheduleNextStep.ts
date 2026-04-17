@@ -36,6 +36,8 @@ export function scheduleNextStep({
     (step: PendingSwapStep) => step.status === 'failed'
   );
 
+  console.log('what the heck is happening here');
+
   if (!!currentStep && !isFailed) {
     if (isTxAlreadyCreated(swap, currentStep)) {
       if (currentStep.fromBlockchain === TransactionType.XRPL) {
