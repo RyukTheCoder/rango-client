@@ -23,7 +23,7 @@ jobs:
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
       GITHUB_TOKEN: ${{ secrets.PAT }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           fetch-depth: 0
           token: ${{ secrets.PAT }}
@@ -35,7 +35,7 @@ jobs:
         run: yarn run i18n:extract
 
       - name: Crowdin push translations
-        uses: crowdin/github-action@v1
+        uses: crowdin/github-action@30849777a3cba6ee9a09e24e195272b8287a0a5b # v1
         with:
           upload_sources: true
           upload_translations: false
@@ -50,7 +50,7 @@ jobs:
         run: node ./scripts/crowdin/command.mjs
 
       - name: Crowdin pull translations
-        uses: crowdin/github-action@v1
+        uses: crowdin/github-action@30849777a3cba6ee9a09e24e195272b8287a0a5b # v1
         id: crowdin-download
         with:
           upload_sources: false
