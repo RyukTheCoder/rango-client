@@ -93,7 +93,7 @@
     "execa": "^7.1.1",
     "filesize": "^10.1.2",
     "globals": "^15.14.0",
-    "happy-dom": "^20.14.6",
+    "happy-dom": "^21.0.4",
     "lint-staged": "^13.2.2",
     "nx": "^22.7.12",
     "patch-package": "^8.0.0",
