@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@mysten/sui": "^1.21.2",
-    "@mysten/wallet-standard": "^0.13.26"
+    "@mysten/wallet-standard": "^0.22.0"
   },
   "peerDependencies": {
     "@mysten/sui": "^1.21.2",
