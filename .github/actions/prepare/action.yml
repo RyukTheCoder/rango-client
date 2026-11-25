@@ -13,7 +13,7 @@ runs:
     # Do not enable setup-node dependency caching for this step.
     # Caching will be handled by the cache step below.
     - name: Setup Node.js
-      uses: actions/setup-node@v6
+      uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
       with:
         node-version: '24'
         registry-url: 'https://registry.npmjs.org'
@@ -26,7 +26,7 @@ runs:
       shell: 'bash'
 
     - name: Cache dependencies
-      uses: actions/cache@v6
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
       id: cache
       with:
         path: '**/node_modules'
