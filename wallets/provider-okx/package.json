@@ -28,7 +28,7 @@
     "@rango-dev/signer-sui": "^0.13.1-next.0",
     "@rango-dev/signer-ton": "^0.31.1-next.0",
     "@rango-dev/signer-tron": "^0.44.1-next.0",
-    "@ton/core": "^0.59.0",
+    "@ton/core": "^0.63.0",
     "rango-types": "^0.6.0"
   },
   "devDependencies": {
