@@ -138,7 +138,6 @@ For better user experience, wallet provider tries to connect to a wallet only wh
 | [Brave](provider-brave/readme.md)                   | ✅  | ❌   | ✅     | ❌  | ❌   | ❌  | ❌       | ❌      |
 | [CoinBase](provider-coinbase/readme.md)             | ✅  | ❌   | ✅     | ❌  | ❌   | ❌  | ❌       | ❌      |
 | [Enkrypt](provider-enkrypt/readme.md)               | ✅  | 🚧   | 🚧     | ❌  | ❌   | ❌  | ❌       | ❌      |
-| [Exodus](provider-exodus/readme.md)                 | ⚠️  | 🚧   | ✅     | ❌  | ❌   | ❌  | ❌       | ❌      |
 | [Ledger](provider-ledger/readme.md)                 | ⚠️  | ❌   | ✅     | ❌  | ❌   | ❌  | ❌       | ❌      |
 | [Ledger Wallet](provider-ledger-wallet/readme.md)   | ⚠️  | ❌   | ❌     | ❌  | ❌   | ❌  | ❌       | ❌      |
 | [MathWallet](provider-math-wallet/readme.md)        | ✅  | 🚧   | ✅     | ❌  | ❌   | ❌  | ❌       | ❌      |
@@ -177,7 +176,6 @@ For better user experience, wallet provider tries to connect to a wallet only wh
 | Braavos       | ✅             | ❌             | ✅           | Injected                  | ✅            |
 | CoinBase      | ⚠️             | ✅             | ✅           | Injected                  | ❌            |
 | Enkrypt       | ✅             | ✅             | ✅           | Injected                  | ✅            |
-| Exodus        | ❌             | ✅             | ⚠️           | Injected                  | ❌            |
 | Ledger        | ✅             | ❌             | ❌           | Transport                 | ✅            |
 | Ledger Wallet | ✅             | ✅             | ✅           | Ledger Wallet             | ✅            |
 | MathWallet    | ❌             | ❌             | ⚠️           | Injected                  | ❌            |

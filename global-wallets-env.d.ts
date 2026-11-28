@@ -9,7 +9,6 @@ declare global {
     braveSolana?: any;
     BinanceChain?: any;
     binancew3w?: any;
-    exodus?: any;
     solana?: any;
     phantom?: any;
     coinbaseWalletExtension?: any;
